@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,25 +7,47 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".LoginActivity">
+    tools:context=".MainActivity">
+
+    <!-- Agrega el ImageView para el logo -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="160dp"
+        android:layout_height="154dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/lbLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="Tienda Virtual"
+        android:textAlignment="center"
+        android:textSize="34sp" />
 
     <EditText
         android:id="@+id/editTextUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Username" />
+        android:hint="Usuario"
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/editTextPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="Contraseña"
         android:inputType="textPassword"
-        android:hint="Password" />
+        android:minHeight="48dp" />
 
     <Button
         android:id="@+id/buttonLogin"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login" />
+        android:text="Entrar" />
+
 
 </LinearLayout>
